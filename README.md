@@ -1,2 +1,0 @@
-# TheFellixBot
-Bhagja Bhosdike (Y)
