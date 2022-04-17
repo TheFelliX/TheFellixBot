@@ -1,0 +1,30 @@
+import os
+import re
+from platform import python_version as kontol
+from telethon import events, Button
+from telegram import __version__ as telever
+from telethon import __version__ as tlhver
+from pyrogram import __version__ as pyrover
+from ShuKurenaiXRoBot.events import register
+from ShuKurenaiXRoBot import telethn as tbot
+
+
+PHOTO = "https://telegra.ph/file/fa109566a6983ff1b7173.jpg"
+
+
+@register(pattern=("/alive"))
+async def awake(event):
+    TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm The FelliX Bot.** \n\n"
+    TEXT += "⚪ **I'm Working Properly** \n\n"
+    TEXT += f"⚪ **Managed By : [Mr Nitric](https://t.me/MrNitric)** \n\n"
+    TEXT += f"⚪ **Library Version :** `{telever}` \n\n"
+    TEXT += f"⚪ **Telethon Version :** `{tlhver}` \n\n"
+    TEXT += f"⚪ **Pyrogram Version :** `{pyrover}` \n\n"
+    TEXT += "**Thanks For Adding Me Here ❤️**"
+    BUTTON = [
+        [
+            Button.url("ʜᴇʟᴘ​", "https://t.me/TheFelliXBot?start=help"),
+            Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/The_Friend_Circle"),
+        ]
+    ]
+    await tbot.send_file(event.chat_id, PHOTO, caption=TEXT, buttons=BUTTON)
