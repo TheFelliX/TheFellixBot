@@ -9,7 +9,7 @@ from ShuKurenaiXRoBot.events import register
 from ShuKurenaiXRoBot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/fa109566a6983ff1b7173.jpg"
+PHOTO = "https://telegra.ph/file/404fcd39fb74f79e5c9e7.jpg"
 
 
 @register(pattern=("/alive"))
