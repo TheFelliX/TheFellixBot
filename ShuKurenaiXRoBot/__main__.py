@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗](https://telegra.ph/file/23bb5d70ec22993f22a0e.jpg) 」────
+────「 [𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗](https://telegra.ph/file/404fcd39fb74f79e5c9e7.jpg) 」────
 ʜᴇʏ! {}
 ɪ ᴀᴍ 𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
