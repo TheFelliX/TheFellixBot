@@ -268,7 +268,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> @Magnumxbot <==="
+        app_details += "\n\n===> @TheFellixBot <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -289,5 +289,5 @@ __help__ = """
 ❂ /imdb <Movie name>*:* Get full info about a movie with imdb.com
 ❂  Magnum <query>*:* Emiko answers the query
 
-  💡Ex: `Magnum where is Japan?`
+  💡Ex: `Fellix where is Japan?`
 """
