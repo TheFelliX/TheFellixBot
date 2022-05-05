@@ -16,15 +16,15 @@ PHOTO = "https://telegra.ph/file/404fcd39fb74f79e5c9e7.jpg"
 async def awake(event):
     TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm The FelliX Bot.** \n\n"
     TEXT += "⚪ **I'm Working Properly** \n\n"
-    TEXT += f"⚪ **Managed By : [Mr Nitric](https://t.me/MrNitric)** \n\n"
+    TEXT += f"⚪ **Managed By : [Nikhil](https://t.me/XeD_Nikhil)** \n\n"
     TEXT += f"⚪ **Library Version :** `{telever}` \n\n"
     TEXT += f"⚪ **Telethon Version :** `{tlhver}` \n\n"
     TEXT += f"⚪ **Pyrogram Version :** `{pyrover}` \n\n"
     TEXT += "**Thanks For Adding Me Here ❤️**"
     BUTTON = [
         [
-            Button.url("ʜᴇʟᴘ​", "https://t.me/TheFelliXBot?start=help"),
-            Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/The_Friend_Circle"),
+            Button.url("ʜᴇʟᴘ​", "https://t.me/FelliXRobot?start=help"),
+            Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/AquaBotsChat"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=TEXT, buttons=BUTTON)
