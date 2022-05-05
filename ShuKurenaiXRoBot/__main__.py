@@ -81,9 +81,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗](https://telegra.ph/file/c700d05475b116e5d50b1.jpg) 」────
+────「 [𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗](https://telegra.ph/file/af926eb734b759107de96.jpg) 」────
 ʜᴇʏ! {}
-ɪ ᴀᴍ 𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
+ɪ ᴀᴍ 𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 I have lots of handy features such as:
 ‣ Warning system
@@ -91,7 +91,7 @@ I have lots of handy features such as:
 ‣ Flood control system
 ‣ Note keeping system
 ‣ Filters keeping system
-‣ Manage by @XeD_Nikhil.
+‣ Approvals and much more.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
 """
@@ -99,7 +99,7 @@ I have lots of handy features such as:
 buttons = [
     [
         InlineKeyboardButton(
-            text="🥀 Add To Your Group 🥀", url="t.me/FellixRoBot?startgroup=new"),
+            text="🥀 Add To Your Group 🥀", url="t.me/FellixRobot?startgroup=new"),
     ],
     [                  
                        InlineKeyboardButton(
@@ -107,7 +107,7 @@ buttons = [
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="Updates📣",
-                             url=f"https://t.me/Aquabots"),
+                             url=f"https://t.me/AquaBots"),
     ],
     [
         InlineKeyboardButton(
@@ -131,8 +131,8 @@ Click on the button bellow to get description about specifics command."""
 
 HELP_MSG = "Click the button below to get help menu in your pm."
 DONATE_STRING = """Contact to **@Shubhanshutya**"""
-HELP_IMG = "https://telegra.ph/file/23bb5d70ec22993f22a0e.jpg"
-GROUP_IMG = "https://telegra.ph/file/23bb5d70ec22993f22a0e.jpg"
+HELP_IMG = "https://telegra.ph/file/af926eb734b759107de96.jpg"
+GROUP_IMG = "https://telegra.ph/file/af926eb734b759107de96.jpg"
 
 
 
@@ -257,7 +257,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [
                   InlineKeyboardButton(text="✧ Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/Aquabots"),
+                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/AquaBots"),
                   ]
                 ]
             ),
@@ -471,8 +471,8 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/Aquabotschat"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Aquabots"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/AquaBotsChat"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/AquaBots"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -491,7 +491,7 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Nikhil", url="https://t.me/xed_Nikhil"), 
+                    InlineKeyboardButton(text="Nikhil", url="https://t.me/Xed_Nikhil"), 
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -778,10 +778,10 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 5371507557:
             update.effective_message.reply_text(
                 "I'm free for everyone 😎 If you wanna make me smile, just join"
-                "[My Channel](https://t.me/Aquabots)".format(DONATION_LINK),
+                "[My Channel](https://t.me/AquaBots)".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
@@ -831,10 +831,10 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="Support🙋",
-                             url=f"https://t.me/Aquabotschats"),
+                             url=f"https://t.me/AquaBotsChat"),
                        InlineKeyboardButton(
                              text="Updates📣",
-                             url="https://t.me/Aquabots")
+                             url="https://t.me/AquaBots")
                      ] 
                 ]
             ),
