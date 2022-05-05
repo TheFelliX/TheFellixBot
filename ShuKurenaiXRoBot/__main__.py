@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗](https://telegra.ph/file/404fcd39fb74f79e5c9e7.jpg) 」────
+────「 [𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗](https://telegra.ph/file/23bb5d70ec22993f22a0e.jpg) 」────
 ʜᴇʏ! {}
 ɪ ᴀᴍ 𝐓𝐡𝐞 𝐅𝐞𝐥𝐥𝐢𝐗 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -93,13 +93,13 @@ I have lots of handy features such as:
 ‣ Filters keeping system
 ‣ Approvals and much more.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛Mᴀɴᴀɢᴇ Bʏ - @XeD_Nikhil ❥︎ ××
+➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="🥀 Add To Your Group 🥀", url="t.me/FellixRobot?startgroup=new"),
+            text="🥀 Add To Your Group 🥀", url="t.me/TheFellixBot?startgroup=new"),
     ],
     [                  
                        InlineKeyboardButton(
@@ -107,7 +107,7 @@ buttons = [
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="Updates📣",
-                             url=f"https://t.me/AquaBots"),
+                             url=f"https://t.me/Sanki_BOTs"),
     ],
     [
         InlineKeyboardButton(
@@ -130,7 +130,7 @@ HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
 HELP_MSG = "Click the button below to get help menu in your pm."
-DONATE_STRING = """Contact to **@XeD_Nikhil**"""
+DONATE_STRING = """Contact to **@Shubhanshutya**"""
 HELP_IMG = "https://telegra.ph/file/23bb5d70ec22993f22a0e.jpg"
 GROUP_IMG = "https://telegra.ph/file/23bb5d70ec22993f22a0e.jpg"
 
@@ -257,7 +257,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [
                   InlineKeyboardButton(text="✧ Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="✧ Updates ", url=f"https://t.me/AquaBots"),
+                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/Sanki_BOTs"),
                   ]
                 ]
             ),
@@ -398,7 +398,7 @@ def shukurenai_about_callback(update, context):
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
             "\n\n_FelliX licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Fellix.",
+            "\n\n Click on button bellow to get basic help for Anie.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -471,8 +471,8 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/AquaBotsChat"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/AquaBots"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/The_Friend_Circle"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Sanki_BOTs"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -491,7 +491,7 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Nikhil", url="https://t.me/XeD_Nikhil"), 
+                    InlineKeyboardButton(text="Nitric", url="https://t.me/MrNitric"), 
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
@@ -781,7 +781,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 1606221784:
             update.effective_message.reply_text(
                 "I'm free for everyone 😎 If you wanna make me smile, just join"
-                "[My Channel](https://t.me/AquaBots)".format(DONATION_LINK),
+                "[My Channel](https://t.me/MrNitric)".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
@@ -831,10 +831,10 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="Support🙋",
-                             url=f"https://t.me/AquaBotsChat"),
+                             url=f"https://t.me/The_Friend_Circle"),
                        InlineKeyboardButton(
                              text="Updates📣",
-                             url="https://t.me/AquaBots")
+                             url="https://t.me/Sanki_BOTs")
                      ] 
                 ]
             ),
