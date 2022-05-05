@@ -5,8 +5,8 @@ wget
 gtts
 beautifulsoup4
 requests
-python-telegram-bot==13.11.0
-SQLAlchemy==1.4.35
+python-telegram-bot==13.9
+sqlalchemy==1.4.31
 psycopg2-binary
 feedparser
 faker
@@ -43,7 +43,7 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-pyrogram==1.4.16
+pyrogram==1.4.7
 PyDictionary
 git+https://github.com/Sorrybabe/downloader
 youtube_search_python==1.4.9
@@ -74,7 +74,7 @@ better_profanity
 textblob 
 nudepy
 nekos.py
-motor
+motor>=2.1.0,<2.6.0
 gpytranslate
 fontTools
 opencv-python-headless
