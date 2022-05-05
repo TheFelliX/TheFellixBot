@@ -93,7 +93,7 @@ I have lots of handy features such as:
 ‣ Filters keeping system
 ‣ Approvals and much more.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Mᴀɴᴀɢᴇ Bʏ - @XeD_Nikhil ❥︎ ××
+➛Mᴀɴᴀɢᴇ Bʏ - @XeD_Nikhil ❥︎ ××
 """
 
 buttons = [
